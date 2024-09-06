@@ -1,0 +1,332 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+h1{color:white;background-color:red;font-size:80;text-align:center;}
+</style>
+<script type="text/javascript">
+function check()
+{
+	var l=1000;
+	var f=document.getElementById("fr").value;
+	fr1=l*f;
+	var d=document.getElementById("dur").value;
+	var t=document.getElementById("tm").value;
+	result=fr1*d*t/1000;
+	document.form1.txtres.value=result;
+	
+	var l=1000;
+	var f=document.getElementById("fr2").value;
+	fr3=l*f;
+	var d1=document.getElementById("dur1").value;
+	var t1=document.getElementById("tm1").value;
+	result1=fr3*d1*t1/1000;
+	document.form1.txtres1.value=result1;
+	
+
+	var l=1000;
+	var fv=document.getElementById("fv2").value;
+	fv3=fv*l;
+	var pd=document.getElementById("pdy").value;
+	result2=fv3*pd/1000;
+	document.form1.txtres2.value=result2;
+	
+	var l=1000;
+	var f=document.getElementById("fr4").value;
+	fr5=l*f;
+	var d2=document.getElementById("dur2").value;
+	result3=fr5*d2/1000;
+	document.form1.txtres3.value=result3;
+	
+	var l=1000;
+	var f=document.getElementById("fr6").value;
+	fr6=l*f;
+	var d3=document.getElementById("dur4").value;
+	var t2=document.getElementById("tm2").value;
+	result4=fr6*d3*t2/1000;
+	document.form1.txtres4.value=result4;
+	
+	var l=1000;
+	wu=document.getElementById("wu1").value;
+	wu1=l*wu;
+	pd1=document.getElementById("pdy1").value;
+	result5=wu1*pd1/1000;
+	document.form1.txtres5.value=result5;
+	
+	var l=1000;
+	 var f=document.getElementById("fr7").value;
+	 fr7=l*f;
+	 var pw=document.getElementById("pw1").value;
+	 result6=fr7*pw/1000;
+	 document.form1.txtres6.value=result6; 
+
+	 var l=1000;
+	 var f=document.getElementById("fr8").value;
+	 fr8=l*f;
+	 var pw2=document.getElementById("pw3").value;
+	 result7=fr8*pw2/1000;
+	 document.form1.txtres7.value=result7; 
+	 ans=result+result1+result2+result3+result4+result5+result6+result7;
+	 document.form1.txtans.value=ans;
+	  return false;
+}
+</script>
+</head>
+<body bgcolor="#2979FF">
+<h1>WATER USAGE CALCULATOR</h1>
+<form name="form1" method="post" onsubmit="return check()">
+<table border="2" align="center" bgcolor="white">
+<tr>
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\shower.jpg" height="300px" width="100%">
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\bath.jpg" height="300px" length="200px">
+	<td>
+</tr>
+<tr>
+	<td>
+	<p>SHOWER</p>
+	<p>per Day</p>
+	<select id="tm">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+ 	<option>6</option>
+	</select><br><br>
+Average duration per shower:<input type="text" name="" id="dur">Minutes<br><br>
+Flow rate:-<input type="text" id="fr">litres per minutes
+	</td>
+	<td>
+	<p>BATHS</p>
+	<p>per Week</p>
+	<select id="tm1">
+	<option>1</option>
+	<option>2</option>
+  	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+  	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+	<option>11</option>
+	<option>12</option>
+  	<option>13</option>
+	<option>14</option>
+	<option>15</option>
+	<option>16</option>
+	</select>
+	<br><br>
+Average duration per shower:<input type="text" name="" id="dur1">Minutes<br><br>
+Flow rate:-<input type="text" id="fr2">Litre per minutes</br>
+
+	</td>
+</tr>
+<tr>
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\flushes.JPG" height="300px" width="100%">
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\running.jpg" height="300px" width="100%"">
+	<td>
+</tr>
+<tr>
+	<td>
+	<p>TOILET FLUSHES</p>
+	<p>per Day</p>
+	<select id="pdy">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	</select><br>
+Flushes volume<input type="text" name="" id="fv2">
+	</td>
+	<td>
+	<p>RUNNIG WATER</p>
+	<p>Minutes per day washing hands,brushing teeth etc.</p>
+	Flow Rate<input type="text" id="fr4">Litre per minutes
+	<br><br>
+	Duration<input type="text" id="dur2">Time
+	<br>
+	</td>
+</tr>
+<tr>
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\dishesnew.jpg" height="300px" width="100%">
+	</td>
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\dishwasher.jpg" height="300px" width="100%">
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>DISHES BY HAND</p>
+	<p>Number of Dishes</p>
+	<select id="fr6">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	</select><br><br>
+	Average duration per day:<input type="text" id="dur4">Time<br><br>
+Flow rate:-<input type="text" id="tm2">Minutes per time
+	
+	</td>
+	<td>
+	<p>DISHWASHER</p>
+	<p>Loads per Day</p>
+	<select id="pdy1">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	</select><br>
+	Flow rate<input type="text" id="wu1">Litres per minutes<br><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\laundry.JPG" width="100%">
+	<td>
+	<img src="C:\Users\HP\OneDrive\Desktop\Pics\lawn.jpg" height="300px" width="100%">
+	<td>
+</tr>
+<tr>
+	<td>
+	<p>LAUNDRY</p>
+	<p>Loads per Day</p>
+	<select id="pw1">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	</select><br><br>
+	Flow rate<input type="text" id="fr7">Litres per minutes<br>
+	</td>
+	<td>
+	<p>LAWN WATERING</p>
+	<p>Irrigation cycles per week</p>
+	<select id="pw3">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	</select><br>
+
+Flow rate<input type="text" id="fr8">Litres per minutes<br>
+	</td>
+</tr>
+<tr>
+
+</table>
+
+<table border="2" align="center" bgcolor="##B2BCAFF">
+<tr> 
+	<td colspan="2" align="center" bgcolor="white">
+	<h2>DAITY WATER USE:</h2>
+	</td>
+<tr>
+	<td>
+		Shower
+	</td>
+	<td>
+	 	<input type="text" name="txtres"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+		Baths
+	</td>
+	<td>
+		<input type="text" name="txtres1"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Toilet flushes
+	</td>
+	<td>
+	 <input type="text" name="txtres2"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Running water
+	</td>
+	<td>
+	<input type="text" name="txtres3"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Dishes by hand 
+	</td>
+	<td>
+	<input type="text" name="txtres4"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Dishwasher
+	</td>
+	<td>
+	<input type="text" name="txtres5"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Laundry
+	</td>
+	<td>
+	<input type="text" name="txtres6"><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	Lawn watering
+	</td>
+	<td>
+	 <input type="text" name="txtres7"><br>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="2" align="center">
+		<input type="submit" name="submit" value="Calculate">
+		<input type="reset" name="reset" value="reset">
+		</td>
+		<tr>
+		<td>RESULT</td>
+		<td><input type="text" id="txtans"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
